@@ -6,9 +6,9 @@ import ProductCard from '../productCard/ProductCard';
 
 // Assets
 import './newArrivals.scss';
-import test1 from '../../test-product-1.png';
-import test2 from '../../test-product-2.png';
-import test3 from '../../test-product-3.png';
+import test1 from '../../images/test-product-1.png';
+import test2 from '../../images/test-product-2.png';
+import test3 from '../../images/test-product-3.png';
 
 export default function NewArrivals() {
   return (

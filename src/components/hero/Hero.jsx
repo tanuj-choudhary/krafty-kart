@@ -3,7 +3,7 @@ import React from 'react';
 import { Jumbotron, Button, Container, Col, Row } from 'react-bootstrap';
 
 import './hero.scss';
-import watch from '../../watch.png';
+import watch from '../../images/watch.png';
 
 export default function Hero() {
   return (
