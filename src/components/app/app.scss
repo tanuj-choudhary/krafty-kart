@@ -1,0 +1,20 @@
+// 1 spacer = 1px = 0.0625rem
+$spacer: 0.0625rem;
+
+$spacers: (
+  0: 0,
+);
+
+// Spacer value ranging from 1 to 100
+@for $i from 1 through 200 {
+  $spacers: map-merge(
+    $spacers,
+    (
+      $i: (
+        $i * $spacer,
+      ),
+    )
+  );
+}
+
+@import '~bootstrap/scss/bootstrap.scss';

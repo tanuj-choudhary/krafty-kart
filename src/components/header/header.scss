@@ -1,0 +1,42 @@
+// Brand name
+.navbar-brand {
+  font-size: 1.8rem;
+}
+
+.brand-a {
+  color: #000000;
+}
+
+.brand-b {
+  color: #ff2020;
+}
+
+// Navbar icon
+.navbar-toggler-custom {
+  border: none;
+}
+
+// Collapsed Navbar
+.navbar-collapse {
+  background: #fff;
+  width: 100%;
+}
+
+// Navbar item
+.navbar-light .navbar-nav .nav-link {
+  font-family: Roboto, sans-serif;
+  color: #141517;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ff2020;
+}
+
+// Desktop
+@media (min-width: 992px) {
+  .navbar-light .navbar-nav .nav-link {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #635c5c;
+    font-weight: 600;
+  }
+}

@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 // Project imports
-import Home from '../components/home';
+import Home from '../components/home/Home';
 
 function Routes() {
   return (
