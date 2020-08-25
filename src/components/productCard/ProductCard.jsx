@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './productCard.scss';
+
 export default function ProductCard({ image, title, price }) {
   return (
     <div className="product mb-30">
