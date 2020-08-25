@@ -7,10 +7,10 @@ import GalleryImage from './GalleryImage';
 
 // Assets
 import './productGallery.scss';
-import gallery1 from '../../gallery1.JPG';
-import gallery2 from '../../gallery2.JPG';
-import gallery3 from '../../gallery3.JPG';
-import gallery4 from '../../gallery4.JPG';
+import gallery1 from '../../images/gallery1.JPG';
+import gallery2 from '../../images/gallery2.JPG';
+import gallery3 from '../../images/gallery3.JPG';
+import gallery4 from '../../images/gallery4.JPG';
 
 export default function ProductGallery() {
   return (

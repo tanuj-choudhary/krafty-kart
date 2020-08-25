@@ -5,11 +5,11 @@ import ProductCard from './ProductCard';
 
 // Assets
 import './mostRatedItems.scss';
-import rated1 from '../../rated1.png';
-import rated2 from '../../rated2.png';
-import rated3 from '../../rated3.png';
-import rated4 from '../../rated4.png';
-import rated5 from '../../rated5.png';
+import rated1 from '../../images/rated1.png';
+import rated2 from '../../images/rated2.png';
+import rated3 from '../../images/rated3.png';
+import rated4 from '../../images/rated4.png';
+import rated5 from '../../images/rated5.png';
 
 export default function MostRatedItems() {
   return (

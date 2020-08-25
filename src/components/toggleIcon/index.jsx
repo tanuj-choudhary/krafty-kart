@@ -1,6 +1,6 @@
 import React from 'react';
 
-import menu from '../../menu.png';
+import menu from '../../images/menu.png';
 import './toggleIcon.scss';
 
 // Hamburger icon
