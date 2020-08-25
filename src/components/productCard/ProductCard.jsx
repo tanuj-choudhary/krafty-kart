@@ -10,7 +10,7 @@ export default function ProductCard({ image, title, price }) {
       </div>
       <div className="product__caption">
         <h3 className="mb-8">
-          <a href="#">{title}</a>
+          <a href="#1">{title}</a>
         </h3>
         <span>{price}</span>
       </div>
