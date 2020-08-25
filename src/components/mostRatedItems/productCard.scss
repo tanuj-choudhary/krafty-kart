@@ -1,0 +1,48 @@
+.productf {
+  img {
+    width: 100%;
+    border-bottom: 3px solid #ff2020;
+  }
+
+  h3 a {
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #444444;
+    text-align: center !important;
+  }
+
+  .productf__caption span {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #444444;
+    text-align: center;
+  }
+
+  h3,
+  span {
+    position: relative;
+    bottom: 65px;
+  }
+}
+
+.imgs-cap {
+  width: 100%;
+  opacity: 0;
+
+  span {
+    display: block;
+    color: #fff;
+    background: #f81f1f;
+    cursor: pointer;
+    text-align: center;
+  }
+}
+
+.productf:hover {
+  .imgs-cap {
+    opacity: 1;
+  }
+}
