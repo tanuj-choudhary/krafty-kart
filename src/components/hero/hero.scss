@@ -1,0 +1,62 @@
+.hero-container {
+  background-color: #f0f0f2;
+
+  .jumbotron {
+    background-color: #f0f0f2;
+  }
+
+  h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 33px;
+    color: #0b1c39;
+    line-height: 1.2;
+  }
+
+  p {
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    color: #212025;
+  }
+
+  .btn {
+    background-color: #4a4a4b;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 0;
+    border: 0;
+  }
+
+  .btn:hover {
+    background-color: #ff2020;
+  }
+
+  img {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 50px;
+      font-weight: 700;
+    }
+    img {
+      display: block;
+      height: 500px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .jumbotron {
+    width: 70%;
+    margin: auto;
+
+    h1 {
+      font-size: 96px;
+    }
+    img {
+      height: 80%;
+    }
+  }
+}
