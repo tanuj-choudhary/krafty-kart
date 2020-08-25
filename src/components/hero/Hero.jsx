@@ -8,7 +8,7 @@ import watch from '../../watch.png';
 export default function Hero() {
   return (
     <Container className="hero-container" fluid="xs">
-      <Jumbotron className=" pt-38 pl-22 pt-md-0 pr-md-0 pb-md-0">
+      <Jumbotron className=" pt-38 pl-22 pt-md-0 pr-md-0 pb-md-0 mb-0">
         <Row className="justify-content-between align-items-center">
           <Col md={8} lg={8} className="pr-lg-auto">
             <h1 className="mb-26 ">Select Your New Perfect Style</h1>
