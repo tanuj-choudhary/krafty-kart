@@ -4,6 +4,7 @@ import Hero from '../hero/Hero';
 import NewArrivals from '../newArrivals/NewArrivals';
 import ProductGallery from '../productGallery/ProductGallery';
 import MostRatedItems from '../mostRatedItems/MostRatedItems';
+import Footer from '../footer/Footer';
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <NewArrivals />
       <ProductGallery />
       <MostRatedItems />
+      <Footer />
     </div>
   );
 }
