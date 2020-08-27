@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import FooterBlock from './FooterBlock';
 
-import './Footer.scss';
+import './footer.scss';
 
 export default function Footer() {
   return (
