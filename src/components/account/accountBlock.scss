@@ -1,0 +1,32 @@
+.account-block {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
+  border-bottom: 1px solid #f0f0f0;
+
+  .account-block-detail {
+    display: flex;
+    align-items: center;
+  }
+
+  i {
+    color: #f12020;
+    height: 20px;
+    width: 20px;
+  }
+
+  a {
+    width: calc(100% - 26px);
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+    color: #878787;
+    text-decoration: none;
+  }
+
+  .fa-arrow-right {
+    color: #878787;
+    height: 14px;
+    width: 14px;
+  }
+}
