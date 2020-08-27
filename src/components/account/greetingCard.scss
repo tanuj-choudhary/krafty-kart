@@ -1,0 +1,29 @@
+.greeting {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+
+  .greeting-card {
+    display: flex;
+    width: 100%;
+  }
+
+  .avatar-img {
+    height: 50px;
+    width: 50px;
+  }
+  h6 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #212121;
+    line-height: 1.4;
+  }
+  h4 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #212121;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.4;
+  }
+}
