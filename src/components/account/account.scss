@@ -1,0 +1,22 @@
+.account-container {
+  background-color: #f1f3f6;
+
+  .account-blocks {
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  }
+
+  .account-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .account-list li a {
+    margin: 0;
+    padding: 12px 5px 12px 66px;
+    font-size: 14px;
+    color: #212121;
+    cursor: pointer;
+  }
+}
