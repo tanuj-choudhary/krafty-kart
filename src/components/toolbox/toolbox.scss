@@ -1,0 +1,34 @@
+.toolbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  color: #cccccc;
+
+  .toolbox-info span {
+    color: #333333;
+  }
+
+  label {
+    color: #333333;
+    font-size: 12px;
+  }
+
+  .toolbox-sort {
+    display: flex;
+    align-items: center;
+  }
+
+  .sort-selector {
+    height: 30px;
+    border-color: #d7d7d7;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .toolbox {
+    flex-direction: row;
+  }
+}
