@@ -1,0 +1,144 @@
+.product-detail-container {
+  font-family: Poppins, sans-serif;
+
+  .product-image {
+    display: flex;
+    justify-content: center;
+    height: 350px;
+
+    @media only screen and (min-width: 900px) {
+      height: 350px;
+      width: 350px;
+    }
+  }
+
+  .product-main-image {
+    width: 100%;
+  }
+  .first-input {
+    display: none;
+  }
+
+  h1 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #333333;
+  }
+
+  .product-price {
+    font-size: 24px;
+    color: #ff2020;
+    line-height: 1.25;
+  }
+
+  p {
+    font-size: 14px;
+    color: #777777;
+  }
+
+  .product-detail-filter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  label {
+    width: 67px;
+    font-size: 14px;
+    color: #666666;
+    text-transform: capitalize;
+  }
+  .size-select {
+    height: 40px;
+  }
+
+  select,
+  input {
+    height: 40px;
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    font-size: 14px;
+    color: #777777;
+    line-height: 1.5;
+  }
+
+  .input-spinner {
+    input {
+      width: 150px;
+      text-align: center;
+
+      &:active,
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .input-group-prepend {
+      margin-right: -19px;
+      z-index: 100000;
+    }
+    .input-group-append {
+      margin-left: -19px;
+      z-index: 100000;
+    }
+
+    button {
+      min-width: 0;
+      color: #333333;
+      font-size: 1rem;
+      border: none;
+      background: none;
+    }
+  }
+
+  .increment-btn,
+  .decrement-btn {
+    padding: 0;
+  }
+
+  .increment-btn:focus,
+  .decrement-btn:focus {
+    outline-color: #ff2020;
+  }
+
+  i {
+    display: inline-block;
+    font-size: 10px;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .add-cart-btn {
+    height: 45px;
+    max-width: 198px;
+    min-width: 150px;
+    background-color: #fff;
+    color: #ff2020;
+    border: 1px solid #ff2020;
+    border-radius: 0;
+
+    span {
+      font-size: 14px;
+      color: inherit;
+      text-transform: uppercase;
+      box-shadow: none;
+      transition: box-shadow 0.35s ease, color 0s ease;
+    }
+
+    i {
+      font-size: 15px;
+    }
+  }
+  .add-cart-btn:hover {
+    background-color: #ff2020;
+    color: #fff;
+  }
+}
