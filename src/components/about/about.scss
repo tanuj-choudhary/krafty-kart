@@ -1,0 +1,151 @@
+.about-image-container {
+  .bg-image {
+    display: flex;
+    width: 100%;
+    min-height: 250px;
+    background-color: #ebebeb;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1 {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+
+    span {
+      padding-top: 5px;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .bg-image {
+    min-height: 450px !important;
+  }
+}
+
+.about-detail-container {
+  h2 {
+    margin-bottom: 14px;
+    font-family: Poppins, sans-serif;
+    font-size: 22px;
+    color: #333;
+  }
+
+  p {
+    font-size: 14px;
+    color: #777777;
+  }
+}
+
+.bg-light {
+  background-color: #f9f9f9;
+  font-family: Poppins, sans-serif;
+
+  h2 {
+    font-size: 26px;
+    color: #333333;
+  }
+
+  .text-primary {
+    font-size: 18px;
+    color: #ff2020 !important;
+  }
+
+  p {
+    font-size: 16px;
+    color: #777777;
+  }
+
+  .news-btn {
+    min-width: 170px;
+    background-color: transparent;
+    font-size: 16px;
+    color: #ff2020;
+    border: none;
+    border: 1px solid #ff2020;
+
+    &:hover {
+      background-color: #ff2020;
+      color: #f9f9f9;
+    }
+  }
+
+  .about-img-front {
+    position: relative;
+    border: 20px solid #f9f9f9;
+    z-index: 2;
+  }
+  .about-img-back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-img-front,
+  .about-img-back {
+    display: none;
+  }
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.about__carousel__icon {
+  background-color: red;
+  color: black;
+}
+
+.about__carousel__content {
+  padding: 0 50px;
+  padding-bottom: 50px;
+}
+
+.about__carousel__h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.about__carousel__h1 h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+}
+
+.about__carousel__img {
+  text-align: center;
+}
+
+.about__carousel__p {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.about__carousel__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #333333;
+}
+
+.about__carousel__text__span {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 992px) {
+  .about__carousel__content {
+    padding: 0 149px;
+    padding-bottom: 42px;
+  }
+}
