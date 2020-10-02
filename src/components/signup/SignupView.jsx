@@ -1,92 +1,96 @@
+// Third party imports
 import React from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
+import { Field, reduxForm } from 'redux-form';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-import './signupView.scss';
-import bg from '../../images/grey2.jpg';
+// Project imports
+import Card from '../../views/Card/Card';
+import InputField from '../../views/inputField/InputField';
+import FormHeader from '../../views/formHeader/FormHeader';
+import { formBlockText, validate } from './utils';
 
-export default function SignupView() {
+function SignupView({ onSubmit, handleSubmit }) {
   return (
     <>
-      <div
-        style={{
-          backgroundImage: `url("${bg}")`,
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-        }}
-        className="signup-header"
-      >
-        Signup
-      </div>
-      <Container className="pt-70 pb-70 pb-md-100 pb-xl-200">
+      <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+      <FormHeader text="login" />
+      <Container className="pt-70 pb-70 pb-md-100 ">
         <Row>
           <Col md={6}>
-            <div className="d-flex flex-column justify-content-center align-items-center signup__left px-20 py-70 px-xl-70 py-xl-80">
-              <h2 className="signup__left__h2 mb-17">
-                Already have an account?
-              </h2>
-              <p className="signup__left__p mb-15">
-                Lorem ipsum dolor sit amet elit. Mollitia ab quasi eos sequi,
-                adipisci deserunt asperiores veritatis dolore at repudiandae.
-              </p>
-
-              <button
-                type="button"
-                className="already-login-btn mt-28 py-18 px-70"
-              >
-                Log in
-              </button>
-            </div>
+            <Card
+              heading={formBlockText.heading}
+              para={formBlockText.para}
+              link={formBlockText.link}
+              linkText={formBlockText.linkText}
+            />
           </Col>
           <Col md={6}>
-            <div className=" signup__right p-20 p-xl-70">
-              <div className="signup__right__heading mb-20">
+            <div className=" form__wrapper p-20 p-xl-70">
+              <div className="form__heading mb-20">
                 Welcome !
                 <br />
                 Sign Up now
               </div>
-              <form className="signup__form">
-                <div className="d-flex signup__form__name__container">
-                  <div className="input__wrapper mb-16 mr-10">
-                    <input
-                      className="form__input px-12 py-6"
+              <form onSubmit={handleSubmit(onSubmit)} className="form">
+                <div className="d-md-flex">
+                  <div className="input__wrapper mb-16 mr-md-10">
+                    <Field
+                      name="firstname"
                       type="text"
-                      placeholder="First Name"
+                      component={InputField}
+                      label="firstname"
                     />
                   </div>
-                  <div className="input__wrapper mb-16 ml-10">
-                    <input
-                      className="form__input px-12 py-6"
+                  <div className="input__wrapper mb-16 ml-md-10">
+                    <Field
+                      name="lastname"
                       type="text"
-                      placeholder="Last Name"
+                      component={InputField}
+                      label="lastname"
                     />
                   </div>
                 </div>
 
                 <div className="input__wrapper mb-16">
-                  <input
-                    className="form__input px-12 py-6"
+                  <Field
+                    name="email"
                     type="text"
-                    placeholder="Email"
+                    component={InputField}
+                    label="email"
                   />
                 </div>
 
                 <div className="input__wrapper mb-16">
-                  <input
-                    className="form__input px-12 py-6"
-                    type="text"
-                    placeholder="Password"
+                  <Field
+                    name="password"
+                    type="password"
+                    component={InputField}
+                    label="password"
                   />
                 </div>
 
                 <div className="input__wrapper mb-16">
-                  <input
-                    className="form__input px-12 py-6"
-                    type="text"
-                    placeholder="Confirm Password"
+                  <Field
+                    name="confirmPassword"
+                    type="password"
+                    component={InputField}
+                    label="confirmPassword"
                   />
                 </div>
 
-                <button type="button" className="signup-btn mt-30 mb-17">
+                <button type="submit" className="form-submit-btn mt-30 mb-17">
                   Sign up
                 </button>
               </form>
@@ -97,3 +101,10 @@ export default function SignupView() {
     </>
   );
 }
+
+const wrapperSignup = reduxForm({
+  form: 'signup',
+  validate,
+})(SignupView);
+
+export default wrapperSignup;
