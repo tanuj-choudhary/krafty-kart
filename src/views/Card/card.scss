@@ -1,0 +1,46 @@
+/***************Form block*********************/
+.form-block {
+  background-image: linear-gradient(
+    90deg,
+    #b08ead 0%,
+    #4b3049 64%,
+    #b08ead 100%
+  );
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+  text-align: center;
+  min-height: 400px;
+
+  .form-block__heading {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+  }
+
+  .form-block__para {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .form-block-btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #fff;
+      color: #ff2020;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .form-block {
+    min-height: 500px;
+  }
+}
