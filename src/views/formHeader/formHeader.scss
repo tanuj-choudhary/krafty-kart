@@ -1,0 +1,17 @@
+.form-header {
+  min-height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0b1c39;
+}
+
+@media (min-width: 575px) {
+  .form-header {
+    font-size: 70px;
+    min-height: 500px;
+  }
+}
