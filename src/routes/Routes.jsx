@@ -10,7 +10,7 @@ import Footer from '../components/footer/Footer';
 import Products from '../components/products/Products';
 import Product from '../components/product/Product';
 import About from '../components/about/About';
-import Signup from '../components/signup/Signup';
+import Signup from '../components/signup';
 
 function Routes() {
   return (
