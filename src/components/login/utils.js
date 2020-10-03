@@ -1,5 +1,5 @@
 import { validateEmail, validatePassword } from '../../utils/validation';
-import { successToast, errorToast } from '../../utils/toast';
+import { errorToast } from '../../utils/toast';
 
 // Validate Function for redux form
 export const validate = (values) => {
