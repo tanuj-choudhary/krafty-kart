@@ -1,6 +1,8 @@
 // Third party imports
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
+import { ConnectedRouter } from 'connected-react-router';
+import { history } from '../utils/store';
 
 // Project imports
 import Header from '../components/header/Header';
@@ -11,10 +13,11 @@ import Products from '../components/products/Products';
 import Product from '../components/product/Product';
 import About from '../components/about/About';
 import Signup from '../components/signup';
+import Login from '../components/login';
 
 function Routes() {
   return (
-    <BrowserRouter>
+    <ConnectedRouter history={history}>
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />
@@ -23,9 +26,10 @@ function Routes() {
         <Route path="/product/:id" exact component={Product} />
         <Route path="/about" exact component={About} />
         <Route path="/signup" exact component={Signup} />
+        <Route path="/login" exact component={Login} />
       </Switch>
       <Footer />
-    </BrowserRouter>
+    </ConnectedRouter>
   );
 }
 
