@@ -21,6 +21,10 @@ $spacers: (
 
 @import '~bootstrap/scss/bootstrap.scss';
 
+a:hover {
+  text-decoration: none;
+}
+
 /**Form styling**/
 .form__wrapper {
   .form__heading {
