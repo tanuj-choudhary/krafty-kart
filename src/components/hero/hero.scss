@@ -18,16 +18,20 @@
     color: #212025;
   }
 
-  .btn {
+  .hero-btn {
     background-color: #4a4a4b;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
     line-height: 0;
     border: 0;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s linear;
   }
 
-  .btn:hover {
+  .hero-btn:hover {
     background-color: #ff2020;
   }
 
