@@ -4,6 +4,7 @@ import { connectRouter } from 'connected-react-router';
 
 import signupReducer from '../signup/reducer';
 import loginReducer from '../login/reducer';
+import newProductsReducer from '../newArrivals/reducer';
 import loadingReducer from './loadingReducer';
 
 const createRootReducer = (history) =>
@@ -11,6 +12,7 @@ const createRootReducer = (history) =>
     form: formReducer,
     signup: signupReducer,
     login: loginReducer,
+    newProducts: newProductsReducer,
     loadingReducer,
     router: connectRouter(history),
   });
