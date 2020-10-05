@@ -14,7 +14,7 @@ export default function Header() {
       <Row>
         <Col className="py-22 px-15 px-lg-120 py-lg-0">
           <Navbar sticky="top" expand="lg">
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
               <span className="brand-a">KRAFTY</span>{' '}
               <span className="brand-b">KART</span>
             </Navbar.Brand>
@@ -27,46 +27,46 @@ export default function Header() {
             </Navbar.Toggle>
 
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mt-16 p-19 m-lg-0 p-lg-0 ml-lg-auto">
+              <Nav className=" mt-16 p-19 m-lg-0 p-lg-0 ml-lg-auto">
                 <Nav.Link
+                  href="/"
                   className="my-2 mx-5 py-7 px-10 m-lg-0 py-lg-41 px-lg-21"
-                  href="#home"
                 >
                   Home
                 </Nav.Link>
                 <Nav.Link
+                  href="/account"
                   className="my-2 mx-5 py-7 px-10 m-lg-0 py-lg-41 px-lg-21"
-                  href="#Account"
                 >
                   Account
                 </Nav.Link>
                 <Nav.Link
+                  href="/products"
                   className="my-2 mx-5 py-7 px-10 m-lg-0 py-lg-41 px-lg-21"
-                  href="#Account"
                 >
                   Shop
                 </Nav.Link>
                 <Nav.Link
+                  href="/orders"
                   className="my-2 mx-5 py-7 px-10 m-lg-0 py-lg-41 px-lg-21"
-                  href="#Orders"
                 >
                   Orders
                 </Nav.Link>
                 <Nav.Link
+                  href="/wishlist"
                   className="my-2 mx-5 py-7 px-10 m-lg-0 py-lg-41 px-lg-21"
-                  href="#Wishlist"
                 >
                   WishList
                 </Nav.Link>
                 <Nav.Link
+                  href="/cart"
                   className="my-2 mx-5 py-7 px-10 m-lg-0 py-lg-41 px-lg-21"
-                  href="#home"
                 >
                   Cart
                 </Nav.Link>
                 <Nav.Link
+                  href="/login"
                   className="my-2 mx-5 py-7 px-10 m-lg-0 py-lg-41 px-lg-21"
-                  href="#home"
                 >
                   Login
                 </Nav.Link>
