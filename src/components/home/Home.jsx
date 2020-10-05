@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Hero from '../hero/Hero';
-import NewArrivals from '../newArrivals/NewArrivals';
+import NewArrivals from '../newArrivals';
 import ProductGallery from '../productGallery/ProductGallery';
 import MostRatedItems from '../mostRatedItems/MostRatedItems';
 
