@@ -2,11 +2,11 @@ import React from 'react';
 
 import './productCard.scss';
 
-export default function ProductCard({ image, title, price }) {
+export default function ProductCard({ image, alt, title, price }) {
   return (
     <div className="productf mb-30">
       <div className="productf__img mb-30">
-        <img src={image} alt="productf" />
+        <img className="most-rated-items__product" src={image} alt={alt} />
         <div className="imgs-cap">
           <span className="py-20">Add to Cart</span>
         </div>
