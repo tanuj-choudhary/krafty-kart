@@ -3,7 +3,7 @@ import React from 'react';
 import Hero from '../hero/Hero';
 import NewArrivals from '../newArrivals';
 import ProductGallery from '../productGallery/ProductGallery';
-import MostRatedItems from '../mostRatedItems/MostRatedItems';
+import MostRatedItems from '../mostRatedItems';
 
 function Home() {
   return (
