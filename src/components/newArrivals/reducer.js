@@ -11,6 +11,11 @@ const reducer = (state = {}, action) => {
 
       return { ...state, ...newState };
 
+    case 'GET_NEW_PRODUCTS_FAILED':
+      newState.status = 'failed';
+
+      return { ...newState };
+
     default:
       return state;
   }
