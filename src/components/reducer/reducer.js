@@ -6,6 +6,7 @@ import signupReducer from '../signup/reducer';
 import loginReducer from '../login/reducer';
 import newProductsReducer from '../newArrivals/reducer';
 import mostRatedItemsReducer from '../mostRatedItems/reducer';
+import authReducer from '../auth/authReducer';
 import loadingReducer from './loadingReducer';
 
 const createRootReducer = (history) =>
@@ -15,6 +16,7 @@ const createRootReducer = (history) =>
     login: loginReducer,
     newProducts: newProductsReducer,
     mostRatedProducts: mostRatedItemsReducer,
+    auth:authReducer,
     loadingReducer,
     router: connectRouter(history),
   });

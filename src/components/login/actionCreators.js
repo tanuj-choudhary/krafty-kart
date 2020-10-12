@@ -7,7 +7,6 @@ export const login = (formData) => async (dispatch) => {
     const res = await kraftyKartAPI.post('/users/login', formData);
 
     window.localStorage.setItem('token', res.data.data.token);
-    window.localStorage.setItem('user', JSON.stringify(res.data.data.user));
 
     dispatch({ type: 'LOGIN_SUCCESS', payload: res.data.data });
 
