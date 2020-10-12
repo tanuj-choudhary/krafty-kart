@@ -4,16 +4,22 @@ import { Container, Row, Col } from 'react-bootstrap';
 import AccountBlock from './AccountBlock';
 import GreetingCard from './GreetingCard';
 
-import './account.scss';
+import './accountView.scss';
 import avatar from '../../images/avatars.svg';
 
-export default function Account() {
-  return (
-    <div className="account-container py-40">
+
+export default function Account({ user,handleLogout }) {
+  
+  const renderHelper = () => {
+    if (!user) {
+      return <div>Loading...</div>;
+    }
+
+      return <div className="account-container py-40">
       <Container>
         <Row>
           <Col>
-            <GreetingCard avatar={avatar} name="virat kohli" />
+            <GreetingCard avatar={avatar} name={user.firstName} />
             <div className="account-blocks">
               <AccountBlock icon="people-carry" title="MY ORDERS" collapse />
               <AccountBlock icon="user-alt" title="ACCOUNT SETTINGS">
@@ -58,12 +64,18 @@ export default function Account() {
                     <a href="#1">My WishList</a>
                   </li>
                 </ul>
-              </AccountBlock>
-              <AccountBlock icon="sign-out-alt" title="Logout" />
+                </AccountBlock>
+                <button onClick={handleLogout} type="button" className="logout-btn">
+                    <AccountBlock icon="sign-out-alt" title="Logout" />
+              </button>
             </div>
           </Col>
         </Row>
       </Container>
-    </div>
-  );
+    </div>;
+
+  };
+
+
+  return renderHelper();
 }
