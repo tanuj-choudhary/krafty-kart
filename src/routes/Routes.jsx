@@ -7,13 +7,15 @@ import { history } from '../utils/store';
 // Project imports
 import Header from '../components/header/Header';
 import Home from '../components/home/Home';
-import Account from '../components/account/Account';
+import Account from "../components/account";
 import Footer from '../components/footer/Footer';
 import Products from '../components/products/Products';
 import Product from '../components/product/Product';
 import About from '../components/about/About';
 import Signup from '../components/signup';
 import Login from '../components/login';
+import PrivateRoute from './PrivateRoute';
+import CustomRoute from './CustomRoute';
 
 function Routes() {
   return (
@@ -21,12 +23,12 @@ function Routes() {
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/account/:id" exact component={Account} />
+        <PrivateRoute path="/account/:id" exact component={Account} />
         <Route path="/products" exact component={Products} />
         <Route path="/product/:id" exact component={Product} />
         <Route path="/about" exact component={About} />
-        <Route path="/signup" exact component={Signup} />
-        <Route path="/login" exact component={Login} />
+        <CustomRoute path="/signup" exact component={Signup} />
+        <CustomRoute path="/login" exact component={Login} />
       </Switch>
       <Footer />
     </ConnectedRouter>
