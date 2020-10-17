@@ -23,10 +23,10 @@ function Routes() {
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />
-        <PrivateRoute path="/account/:id" exact component={Account} />
         <Route path="/products" exact component={Products} />
-        <Route path="/product/:id" exact component={Product} />
+        <Route path="/products/:id" exact component={Product} />
         <Route path="/about" exact component={About} />
+        <PrivateRoute path="/account" exact component={Account} />
         <CustomRoute path="/signup" exact component={Signup} />
         <CustomRoute path="/login" exact component={Login} />
       </Switch>

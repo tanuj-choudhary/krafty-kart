@@ -18,7 +18,7 @@ export default function Account({ user,handleLogout }) {
       return <div className="account-container py-40">
       <Container>
         <Row>
-          <Col>
+          <Col lg={4}>
             <GreetingCard avatar={avatar} name={user.firstName} />
             <div className="account-blocks">
               <AccountBlock icon="people-carry" title="MY ORDERS" collapse />
