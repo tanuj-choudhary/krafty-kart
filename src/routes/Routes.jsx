@@ -14,6 +14,7 @@ import Product from '../components/product/Product';
 import About from '../components/about/About';
 import Signup from '../components/signup';
 import Login from '../components/login';
+import Profile from '../components/profile';
 import PrivateRoute from './PrivateRoute';
 import CustomRoute from './CustomRoute';
 
@@ -27,6 +28,7 @@ function Routes() {
         <Route path="/products/:id" exact component={Product} />
         <Route path="/about" exact component={About} />
         <PrivateRoute path="/account" exact component={Account} />
+        <PrivateRoute path="/account/profile" exact component={Profile} />
         <CustomRoute path="/signup" exact component={Signup} />
         <CustomRoute path="/login" exact component={Login} />
       </Switch>

@@ -1,0 +1,24 @@
+.edit__form__input__field {
+  padding: 20px 16px 0 16px;
+  height: 50px;
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+.edit__form__input__field:disabled {
+  padding: 16px;
+  background-color: #fafafa;
+  color: #878787;
+  cursor: not-allowed;
+  text-transform: capitalize;
+}
+
+@media (min-width: 768px) {
+  .edit__form__input__field {
+    width: auto;
+  }
+}
