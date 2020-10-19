@@ -1,0 +1,23 @@
+.edit__me__form__input__wrapper {
+  position: relative;
+  .edit__form__input__label {
+    position: absolute;
+    padding: 8px 10px 0;
+    transform: translateY(-15%) scale(0.815);
+    left: 0;
+    top: 0;
+    color: #878787;
+  }
+}
+
+.edit__form__submit-btn {
+  width: 130px;
+  height: 48px;
+  background: #2874f0;
+  color: #fff;
+  font-weight: 500;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}

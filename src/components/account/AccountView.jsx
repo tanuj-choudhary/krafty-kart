@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import AccountBlock from './AccountBlock';
 import GreetingCard from './GreetingCard';
@@ -18,20 +19,20 @@ export default function Account({ user,handleLogout }) {
       return <div className="account-container py-40">
       <Container>
         <Row>
-          <Col lg={4}>
+          <Col>
             <GreetingCard avatar={avatar} name={user.firstName} />
             <div className="account-blocks">
               <AccountBlock icon="people-carry" title="MY ORDERS" collapse />
               <AccountBlock icon="user-alt" title="ACCOUNT SETTINGS">
                 <ul className="account-list">
                   <li>
-                    <a href="#1">Profile Information</a>
+                    <Link to={{pathname:'/account/profile'}}>Profile Information</Link>
                   </li>
                   <li>
-                    <a href="#1">Manage Addresses</a>
+                    <Link to={{pathname:'/account/address'}}>Manage Addresses</Link>
                   </li>
                   <li>
-                    <a href="#1">PAN Card Information</a>
+                    <a href="#pancard" >PAN Card Information</a>
                   </li>
                 </ul>
               </AccountBlock>

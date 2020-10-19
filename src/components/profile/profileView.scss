@@ -1,0 +1,25 @@
+.profile__box {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+
+  .profile__box__content {
+  }
+
+  .profile__box__form__heading {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .profile__box__form__edit-btn {
+    padding: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2874f0;
+    cursor: pointer;
+  }
+}
