@@ -7,7 +7,7 @@ function EditFormInputField({ input, type, placeholder, disabled, meta: { touche
     return <>
         <input placeholder={placeholder} disabled={disabled} className="edit__form__input__field " {...input} type={type} autoComplete="off" />
         {touched && error && (
-        <span className="form__input__field__error">{error}</span>
+        <span className="form__input__field__error edit__form__input__field__error">{error}</span>
       )}
         </>;
        
