@@ -16,6 +16,26 @@ const isValidPassword = (password) => {
   return false;
 };
 
+const isValidNumber = (number) => {
+  const phoneno = /^\d{10}$/;
+  
+  if (number.match(phoneno)) {
+    return true;
+  }
+
+  return false;
+};
+
+const isValidPincode = pincode => {
+  const pincodeRegex = /^\d{6}$/;
+
+  if (pincode.match(pincodeRegex)) {
+    return true;
+  }
+
+  return false;
+};
+
 // Validate email
 export const validateEmail = (email) => {
   let error = null;
@@ -76,6 +96,56 @@ export const validateConfirmPassword = (password, confirmpassword) => {
     error = 'required';
   } else if (confirmpassword !== password) {
     error = 'Password and confirm password should match';
+  }
+
+  return error;
+};
+
+// Validate email
+export const validateMobileNumber = (number) => {
+  let error = null;
+
+  if (!number) {
+    error = 'required';
+  } else if (!isValidNumber(number)) {
+    error = 'Please enter a valid number';
+  }
+
+  return error;
+};
+
+// Validate address
+export const validateAddress = (address) => {
+  let error = null;
+
+  if (!address) {
+    error = 'Required';
+  }
+
+  return error;
+};
+
+// Validate pincode
+export const validatePincode = (pincode) => {
+  let error = null;
+
+  if (!pincode) {
+    error = 'Required';
+  } else if (!isValidPincode(pincode)) {
+    error = 'Invalid pincode';
+  }
+
+  return error;
+};
+
+// Validate type
+export const validateAddressType = (addressType) => {
+  let error = null;
+
+  if (!addressType) {
+    error = 'Required';
+  } else if (addressType !== 'work' && addressType !== 'home') {
+    error = 'type can be home or work';
   }
 
   return error;
