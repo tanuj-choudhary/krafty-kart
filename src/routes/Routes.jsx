@@ -16,6 +16,8 @@ import Signup from '../components/signup';
 import Login from '../components/login';
 import Profile from '../components/profile';
 import Address from '../components/address';
+import Cart from '../components/Cart';
+
 import PrivateRoute from './PrivateRoute';
 import CustomRoute from './CustomRoute';
 
@@ -31,6 +33,7 @@ function Routes() {
         <PrivateRoute path="/account" exact component={Account} />
         <PrivateRoute path="/account/profile" exact component={Profile} />
         <PrivateRoute path="/account/address" exact component={Address} />
+        <PrivateRoute path="/cart" exact component={Cart} />
         <CustomRoute path="/signup" exact component={Signup} />
         <CustomRoute path="/login" exact component={Login} />
       </Switch>

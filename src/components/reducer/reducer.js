@@ -7,6 +7,7 @@ import loginReducer from '../login/reducer';
 import newProductsReducer from '../newArrivals/reducer';
 import mostRatedItemsReducer from '../mostRatedItems/reducer';
 import addressReducer from '../address/reducer';
+import orderReducer from '../Cart/reducer';
 
 import authReducer from '../auth/authReducer';
 import loadingReducer from './loadingReducer';
@@ -20,6 +21,7 @@ const createRootReducer = (history) =>
     mostRatedProducts: mostRatedItemsReducer,
     auth:authReducer,
     addressFormState:addressReducer,
+    orders:orderReducer,
     loadingReducer,
     router: connectRouter(history),
   });
