@@ -1,0 +1,30 @@
+.address-box {
+  border: 1px solid #e0e0e0;
+  border-radius: 2px 0;
+  font-size: 14px;
+}
+
+.address-box__content {
+  max-width: 848px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.address-box__type {
+  max-width: 45px;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #878787;
+  vertical-align: middle;
+  padding: 4px 7px;
+  border-radius: 2px;
+  background-color: #f0f0f0;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.address-box__name,
+.address-box__mobileNimber,
+.address-box__pincode {
+  font-weight: 500;
+}

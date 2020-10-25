@@ -1,0 +1,29 @@
+.address__form__input__wrapper {
+  position: relative;
+}
+
+.address__form__input__field {
+  height: 50px;
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  border-radius: 2px;
+}
+
+.address__input__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+  padding: 18px 20px 0;
+  font-size: 14px;
+  color: #878787;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.address__form__input__field:focus + .address__input__label {
+  transform: translateY(-10px) scale(0.8);
+}
