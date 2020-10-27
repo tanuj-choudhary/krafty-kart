@@ -8,7 +8,7 @@ import './hero.scss';
 import watch from '../../images/watch.png';
 
 function Hero() {
-  const productID = '5f7abd72dcc9900ff8dcc3a5';
+  const productID = '5f7d7543cb0abc12245b5257';
 
   return (
     <Container className="hero-container" fluid="xs">

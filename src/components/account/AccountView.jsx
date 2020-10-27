@@ -22,7 +22,7 @@ export default function Account({ user,handleLogout }) {
           <Col>
             <GreetingCard avatar={avatar} name={user.firstName} />
             <div className="account-blocks">
-              <AccountBlock linkAddress="/account/orders" icon="people-carry" title="MY ORDERS" collapse />
+              <AccountBlock linkAddress="/orders" icon="people-carry" title="MY ORDERS" collapse />
               <AccountBlock icon="user-alt" title="ACCOUNT SETTINGS">
                 <ul className="account-list">
                   <li>
