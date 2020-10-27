@@ -1,11 +1,8 @@
 import kraftykartAPI from '../../api/kraftyKartAPI';
 
 export const getProductsList = (values) => async (dispatch) => {
-
   const params = { limit: 12, ...values };
   
-  console.log(params);
-
   try {
     const res = await kraftykartAPI.get('/products', {
       params

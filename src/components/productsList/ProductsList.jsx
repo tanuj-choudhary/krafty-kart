@@ -19,6 +19,7 @@ export default function ProductsList({ products, xs, md, lg }) {
           image={product.url}
           title={product.name}
           price={product.price}
+          id={product._id}
         />
       </Col>
     ));
