@@ -1,6 +1,6 @@
 // Third party imports
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 import { history } from '../utils/store';
 
@@ -18,6 +18,7 @@ import Profile from '../components/profile';
 import Address from '../components/address';
 import Cart from '../components/Cart';
 import Orders from '../components/orders';
+import Page404 from '../components/error/Page404';
 
 import PrivateRoute from './PrivateRoute';
 import CustomRoute from './CustomRoute';
@@ -38,6 +39,8 @@ function Routes() {
         <PrivateRoute path="/orders" exact component={Orders} />
         <CustomRoute path="/signup" exact component={Signup} />
         <CustomRoute path="/login" exact component={Login} />
+        <Route path="/Page404" exact component={Page404} />
+        <Redirect to="/Page404" />
       </Switch>
       <Footer />
     </ConnectedRouter>
