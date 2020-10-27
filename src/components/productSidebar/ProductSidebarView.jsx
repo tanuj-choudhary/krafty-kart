@@ -1,69 +1,62 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import { Button } from 'react-bootstrap';
 
-import './productSidebar.scss';
-import SidebarBlock from './SidebarBlocks';
+import './productSidebarView.scss';
+import SidebarBlock from '../../views/sidebarBlock/SidebarBlocks';
 
-export default function ProductSidebar() {
+ function ProductSidebarView({onInputChange}) {
   return (
-    <div className="sidebar">
+    <form className="sidebar">
       <div className="filters mb-20 pt-6 pb-21">
         <label className="m-0">Filters:</label>
-        <Button className="clear-button m-0 p-0 ml-150 ">Clean All</Button>
+        <Button className="clear-button m-0 p-0 ml-100">Clean All</Button>
       </div>
       <SidebarBlock title="Category">
         <ul className="block-list pt-10 pb-20 m-0 pl-20">
           <li>
-            <input type="checkbox" />
+            <input  onChange={onInputChange} id="category" name="sports" type="checkbox" />
             <label> Sports</label>
           </li>
           <li>
-            <input type="checkbox" />
+            <input onChange={onInputChange} id="category" name="analog" type="checkbox" />
             <label> Analog</label>
           </li>
           <li>
-            <input type="checkbox" />
+            <input onChange={onInputChange} id="category" name="digital" type="checkbox" />
             <label> Digital</label>
           </li>
           <li>
-            <input type="checkbox" />
-            <label> Automatic</label>
+            <input onChange={onInputChange} id="category" name="mechanical" type="checkbox" />
+            <label>Mechanical</label>
           </li>
           <li>
-            <input type="checkbox" />
-            <label> Chronograph</label>
+            <input onChange={onInputChange} id="category" name="touchscreen" type="checkbox" />
+            <label> Touchscreen</label>
           </li>
           <li>
-            <input type="checkbox" />
-            <label> Dress</label>
-          </li>
-          <li>
-            <input type="checkbox" />
+            <input onChange={onInputChange} id="category" name="quartz" type="checkbox" />
             <label> Quartz</label>
           </li>
         </ul>
       </SidebarBlock>
-      <SidebarBlock title="Category">
+      <SidebarBlock title="Size">
         <div className="filter-colors" />
         <ul className="block-list pt-10 pb-20 m-0 pl-20">
           <li>
-            <input type="checkbox" />
+            <input onChange={onInputChange} id="sizes" name="S" type="checkbox" />
             <label> S</label>
           </li>
           <li>
-            <input type="checkbox" />
+            <input onChange={onInputChange} id="sizes" name="M" type="checkbox" />
             <label> M</label>
           </li>
           <li>
-            <input type="checkbox" />
-            <label> l</label>
+            <input onChange={onInputChange} id="sizes" name="L" type="checkbox" />
+            <label> L</label>
           </li>
           <li>
-            <input type="checkbox" />
-            <label> XL</label>
-          </li>
-          <li>
-            <input type="checkbox" />
+            <input onChange={onInputChange} id="sizes" name="XXL" type="checkbox" />
             <label> XXL</label>
           </li>
         </ul>
@@ -116,35 +109,38 @@ export default function ProductSidebar() {
       <SidebarBlock title="Brand">
         <ul className="block-list pt-10 pb-20 m-0 pl-20">
           <li>
-            <input type="checkbox" />
-            <label>Next</label>
+            <input onChange={onInputChange} id="brand"  name="fasrack" type="checkbox" />
+            <label>Fasrack</label>
           </li>
           <li>
-            <input type="checkbox" />
-            <label> River Island</label>
+            <input onChange={onInputChange} id="brand"  name="romex" type="checkbox" />
+            <label>Romex</label>
           </li>
           <li>
-            <input type="checkbox" />
-            <label> Geox</label>
+            <input onChange={onInputChange} id="brand"  name="adibas" type="checkbox" />
+            <label>Adibas</label>
           </li>
           <li>
-            <input type="checkbox" />
-            <label> New Balance</label>
+            <input onChange={onInputChange} id="brand"  name="BREITLING" type="checkbox" />
+            <label>Breitling</label>
           </li>
           <li>
-            <input type="checkbox" />
-            <label> UGG</label>
+            <input onChange={onInputChange} id="brand"  name="ghock" type="checkbox" />
+            <label>Ghock</label>
           </li>
           <li>
-            <input type="checkbox" />
-            <label> F&F</label>
+            <input onChange={onInputChange} id="brand"  name="onega" type="checkbox" />
+            <label>Onega</label>
           </li>
           <li>
-            <input type="checkbox" />
-            <label> Nike</label>
+            <input onChange={onInputChange} id="brand"  name="" type="checkbox" />
+            <label>Nike</label>
           </li>
         </ul>
       </SidebarBlock>
-    </div>
+    </form>
   );
 }
+
+
+export default ProductSidebarView;

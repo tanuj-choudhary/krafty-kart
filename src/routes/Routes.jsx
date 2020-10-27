@@ -9,7 +9,7 @@ import Header from '../components/header/Header';
 import Home from '../components/home/Home';
 import Account from "../components/account";
 import Footer from '../components/footer/Footer';
-import Products from '../components/products/Products';
+import Products from "../components/products";
 import Product from '../components/product/Product';
 import About from '../components/about/About';
 import Signup from '../components/signup';
@@ -17,6 +17,7 @@ import Login from '../components/login';
 import Profile from '../components/profile';
 import Address from '../components/address';
 import Cart from '../components/Cart';
+import Orders from '../components/orders';
 
 import PrivateRoute from './PrivateRoute';
 import CustomRoute from './CustomRoute';
@@ -34,6 +35,7 @@ function Routes() {
         <PrivateRoute path="/account/profile" exact component={Profile} />
         <PrivateRoute path="/account/address" exact component={Address} />
         <PrivateRoute path="/cart" exact component={Cart} />
+        <PrivateRoute path="/orders" exact component={Orders} />
         <CustomRoute path="/signup" exact component={Signup} />
         <CustomRoute path="/login" exact component={Login} />
       </Switch>
