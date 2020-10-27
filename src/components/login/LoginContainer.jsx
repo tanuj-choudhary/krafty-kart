@@ -12,6 +12,7 @@ function LoginContainer({ login, loginRes }) {
 
   return (
     <>
+      {loginRes.status === 'success' && window.location.reload()}
       {renderToast(loginRes.status, loginRes.error)}
       <LoginView onSubmit={onSubmit} />
     </>

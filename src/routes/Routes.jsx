@@ -1,8 +1,6 @@
 // Third party imports
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
-import { ConnectedRouter } from 'connected-react-router';
-import { history } from '../utils/store';
+import { Switch, Route, Redirect,BrowserRouter } from 'react-router-dom';
 
 // Project imports
 import Header from '../components/header/Header';
@@ -25,7 +23,7 @@ import CustomRoute from './CustomRoute';
 
 function Routes() {
   return (
-    <ConnectedRouter history={history}>
+    <BrowserRouter>
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />
@@ -43,7 +41,7 @@ function Routes() {
         <Redirect to="/Page404" />
       </Switch>
       <Footer />
-    </ConnectedRouter>
+    </BrowserRouter>
   );
 }
 

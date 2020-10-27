@@ -15,7 +15,7 @@ import authReducer from '../auth/authReducer';
 import loadingReducer from './loadingReducer';
 import productsParamsReducer from './productsParamsReducer';
 
-const createRootReducer = (history) =>
+const createRootReducer = () =>
   combineReducers({
     form: formReducer,
     signup: signupReducer,
@@ -29,7 +29,6 @@ const createRootReducer = (history) =>
     orders: orderReducer,
     productsParams:productsParamsReducer,
     loadingReducer,
-    router: connectRouter(history),
   });
 
 export default createRootReducer;
