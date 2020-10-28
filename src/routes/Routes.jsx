@@ -1,6 +1,6 @@
 // Third party imports
 import React from 'react';
-import { Switch, Route, Redirect,BrowserRouter } from 'react-router-dom';
+import { Switch, Route, Redirect,HashRouter } from 'react-router-dom';
 
 // Project imports
 import Header from '../components/header/Header';
@@ -23,7 +23,7 @@ import CustomRoute from './CustomRoute';
 
 function Routes() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <Switch>
         <Route path="/" exact component={Home} />
@@ -41,7 +41,7 @@ function Routes() {
         <Redirect to="/Page404" />
       </Switch>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
