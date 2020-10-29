@@ -8,6 +8,9 @@ const reducer = (state=null, action) => {
         case 'USER_UPDATE_SUCCESS':
             newObj = {status:'success',user:action.payload};
             return { ...state, ...newObj };
+        case 'USER_UPDATE_FAILED':
+            newObj = {status:'failed',error:action.payload};
+            return { ...state, ...newObj };
         default:
             return state;
     }
