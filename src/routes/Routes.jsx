@@ -9,7 +9,7 @@ import Account from "../components/account";
 import Footer from '../components/footer/Footer';
 import Products from "../components/products";
 import Product from '../components/product';
-import About from '../components/about/About';
+import About from '../views/about';
 import Signup from '../components/signup';
 import Login from '../components/login';
 import Profile from '../components/profile';
