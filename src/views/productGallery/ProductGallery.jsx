@@ -2,8 +2,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-// Components
-import GalleryImage from './GalleryImage';
+// Project imports
+import GalleryImage from '../galleryImage';
 
 // Assets
 import './productGallery.scss';
