@@ -32,49 +32,49 @@ export default function Header() {
                 <Nav.Link
                   as={Link}
                   to="/"
-                  className="my-2 mx-5 py-7 px-10 m-lg-0 py-lg-41 px-lg-21"
+                  className="my-2  py-7  m-lg-0 py-lg-41 px-lg-21"
                 >
                   Home
                 </Nav.Link>
                 <Nav.Link
                   as={Link}
                   to="/account"
-                  className="my-2 mx-5 py-7 px-10 m-lg-0 py-lg-41 px-lg-21"
+                  className="my-2  py-7  m-lg-0 py-lg-41 px-lg-21"
                 >
                   Account
                 </Nav.Link>
                 <Nav.Link
                   as={Link}
                   to="/products"
-                  className="my-2 mx-5 py-7 px-10 m-lg-0 py-lg-41 px-lg-21"
+                  className="my-2  py-7  m-lg-0 py-lg-41 px-lg-21"
                 >
                   Shop
                 </Nav.Link>
                 <Nav.Link
                   as={Link}
                   to="/orders"
-                  className="my-2 mx-5 py-7 px-10 m-lg-0 py-lg-41 px-lg-21"
+                  className="my-2  py-7  m-lg-0 py-lg-41 px-lg-21"
                 >
                   Orders
                 </Nav.Link>
                 <Nav.Link
                   as={Link}
                   to="/wishlist"
-                  className="my-2 mx-5 py-7 px-10 m-lg-0 py-lg-41 px-lg-21"
+                  className="my-2  py-7  m-lg-0 py-lg-41 px-lg-21"
                 >
                   WishList
                 </Nav.Link>
                 <Nav.Link
                   as={Link}
                   to="/cart"
-                  className="my-2 mx-5 py-7 px-10 m-lg-0 py-lg-41 px-lg-21"
+                  className="my-2  py-7  m-lg-0 py-lg-41 px-lg-21"
                 >
                   Cart
                 </Nav.Link>
                 <Nav.Link
                   as={Link}
                   to="/login"
-                  className="my-2 mx-5 py-7 px-10 m-lg-0 py-lg-41 px-lg-21"
+                  className="my-2  py-7  m-lg-0 py-lg-41 px-lg-21"
                 >
                   Login
                 </Nav.Link>
