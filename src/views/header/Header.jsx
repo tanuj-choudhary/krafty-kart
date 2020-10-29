@@ -72,6 +72,13 @@ import './header.scss';
                 >
                   Login
                 </Nav.Link>
+                <Nav.Link
+                  as={Link}
+                  to="/about"
+                  className="my-2  py-7  m-lg-0 py-lg-41 px-lg-21"
+                >
+                  About us
+                </Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
