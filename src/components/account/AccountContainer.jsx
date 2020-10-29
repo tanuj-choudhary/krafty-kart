@@ -1,12 +1,12 @@
 import React from 'react';
 import AccountView from './AccountView';
 
-export default function AccountContainer(props) {
+export default function AccountContainer({user}) {
 
     const handleLogout = () => {
         localStorage.removeItem('token');
         window.location.reload();
     };
 
-    return <AccountView {...props} handleLogout={handleLogout} />;
+    return <AccountView user={user} handleLogout={handleLogout} />;
 }

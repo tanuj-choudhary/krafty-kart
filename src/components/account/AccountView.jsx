@@ -1,15 +1,18 @@
+// Third party imports
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-import AccountBlock from './AccountBlock';
-import GreetingCard from './GreetingCard';
+// Project imports
+import AccountBlock from '../../views/accountBlock';
+import GreetingCard from '../../views/greetingCard';
 
+// Style Sheet
 import './accountView.scss';
 import avatar from '../../images/avatars.svg';
 
 
-export default function Account({ user,handleLogout }) {
+ function AccountView({ user,handleLogout }) {
   
   const renderHelper = () => {
     if (!user) {
@@ -80,3 +83,5 @@ export default function Account({ user,handleLogout }) {
 
   return renderHelper();
 }
+
+export default AccountView;
