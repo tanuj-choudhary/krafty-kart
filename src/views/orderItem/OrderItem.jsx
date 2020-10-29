@@ -9,7 +9,7 @@ function OrderItem({order}) {
         
         return items.map((item) => {
             return (
-                <div className="order__item mb-8 p-16">
+                <div key={item._id} className="order__item mb-8 p-16">
                     <div className="order__item__content d-flex">
                         <div className="order__item__left mr-60 mr-md-0 d-flex">
                             <div className="mx-20">

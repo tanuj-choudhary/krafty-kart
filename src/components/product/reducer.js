@@ -4,6 +4,8 @@ const reducer = (state=null, action) => {
     switch (action.type) {
         case 'GET_PRODUCT_SUCCESS': 
             return { ...state, ...action.payload };
+        case 'GET_PRODUCT_FAILED':
+            return {error:action.payload};
         default:
             return state;
     }

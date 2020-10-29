@@ -1,7 +1,8 @@
+// Third party imports
 import React from 'react';
 import { connect } from 'react-redux';
 
-
+// Project imports
 import { setFormState } from '../address/actionCreator';
 import {addAddress} from './actionCreator';
 import EditAddressFormView from './EditAddressFormView';

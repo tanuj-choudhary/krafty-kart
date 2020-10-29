@@ -1,8 +1,9 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
-import EditFormInputField from '../../views/editFormInputField/EditFormInputField';
+import { ToastContainer } from 'react-toastify';
 
+import EditFormInputField from '../../views/editFormInputField/EditFormInputField';
 import Faqs from '../../views/faqs/Faqs';
 import { validate } from './utils';
 import './editMeFormView.scss';
@@ -38,6 +39,19 @@ function EditMeFormView({handleEdit,handleSubmit,onSubmit, inputDisabled,user}) 
 
 
     return (
+        <>
+            
+            <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
         <div className="profile__box__info__form___wrapper" >
              
             <div className="d-flex pb-24">
@@ -66,7 +80,8 @@ function EditMeFormView({handleEdit,handleSubmit,onSubmit, inputDisabled,user}) 
             </form>
 
             <Faqs />
-        </div>
+            </div>
+            </>
     );
 }
 

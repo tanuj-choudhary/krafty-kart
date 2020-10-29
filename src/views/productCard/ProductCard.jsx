@@ -13,7 +13,7 @@ export default function ProductCard({ image, title, price, id }) {
         <h3 className="mb-8">
           <Link to={{ pathname: `/products/${id}` }}>{title}</Link>
         </h3>
-        <span>{price}</span>
+        <span>₹{price}</span>
       </div>
     </div>
   );

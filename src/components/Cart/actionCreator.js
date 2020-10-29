@@ -34,7 +34,11 @@ export const addProductToCart = (id) => async dispatch => {
 
     try {
         const res = await kraftyKartAPI.post(`/users/cart/products/${id}`,null,config);
-        const {user} = res.data;
+        const { user } = res.data;
+        
+        if (user) {
+            alert('Order successfully placed');
+        }
         dispatch({type:'USER_UPDATE_SUCCESS',payload:user});
     } catch (err) {
         if (err.response) {
@@ -56,7 +60,10 @@ export const placeOrder = (data) => async dispatch => {
 
     try {
         const res = await kraftyKartAPI.post('/users/orders', data, config);
-        const {order} = res.data;
+        const { order } = res.data;
+        if (order) {
+            alert('Item added to cart');
+        }
         dispatch({type:'ORDER_SUCCESS',payload:order});
     } catch (err) {
         if (err.response) {

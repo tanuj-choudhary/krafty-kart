@@ -3,16 +3,16 @@ import React from 'react';
 import { Switch, Route, Redirect,HashRouter } from 'react-router-dom';
 
 // Project imports
-import Header from '../components/header/Header';
-import Home from '../components/home/Home';
+import Header from '../views/header';
+import Home from '../views/home/Home';
 import Account from "../components/account";
 import Footer from '../components/footer/Footer';
 import Products from "../components/products";
 import Product from '../components/product';
-import About from '../components/about/About';
+import About from '../views/about';
 import Signup from '../components/signup';
 import Login from '../components/login';
-import Profile from '../components/profile';
+import Profile from '../views/profile';
 import Address from '../components/address';
 import Cart from '../components/Cart';
 import Orders from '../components/orders';

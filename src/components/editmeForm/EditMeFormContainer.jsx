@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { editMe } from './actioncreator';
 
+import { editMe } from './actioncreator';
+import { renderToast } from './utils';
 import EditMeFormView from './EditMeFormView';
 
-function EditMeFormContainer({ user,editUser }) {
+function EditMeFormContainer({ user,editUser,userUpdateStatus }) {
     const [inputDisabled, setinputDisabled] = useState(true);
 
 
@@ -22,12 +23,15 @@ function EditMeFormContainer({ user,editUser }) {
         setinputDisabled(true);
     };
 
-    return <EditMeFormView handleEdit={handleEdit} onSubmit={onSubmit} inputDisabled={inputDisabled} user={user} />;
+    return <>
+         {renderToast(userUpdateStatus.status,userUpdateStatus.error)}
+        <EditMeFormView handleEdit={handleEdit} onSubmit={onSubmit} inputDisabled={inputDisabled} user={user} />
+        </>;
         
 }
 
 const mapStateToProps = (state) => {
-    return {user: state.auth.user};
+    return {user: state.auth.user,userUpdateStatus:state.auth};
 };
 
 const mapDispatchToProps = { editUser: editMe };

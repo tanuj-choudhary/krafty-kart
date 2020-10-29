@@ -1,6 +1,8 @@
+// Third party imports
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+// Style Sheet
 import './accountBlock.scss';
 
 export default function AccountBlock({ icon, title, collapse, children,linkAddress }) {

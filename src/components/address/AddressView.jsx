@@ -1,8 +1,12 @@
+// Third party imports
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import AddressBox from '../../views/addressBox/AddressBox';
 
+// Project imports
+import AddressBox from '../../views/addressBox/AddressBox';
 import EditAddressForm from '../editAddressForm';
+
+// Style Sheet
 import './addressView.scss';
 
 function AddressView({ user,handleDelete,formState,handleAdd }) {
