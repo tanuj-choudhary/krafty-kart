@@ -3,7 +3,7 @@ import React from 'react';
 import { Container, Row, Col, Spinner } from 'react-bootstrap';
 
 // Project Imports
-import ProductCard from '../productCard/ProductCard';
+import ProductCard from '../../views/productCard';
 
 // Assets
 import './newArrivalsView.scss';

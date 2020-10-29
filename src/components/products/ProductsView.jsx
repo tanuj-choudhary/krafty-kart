@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Pagination } from 'react-bootstrap';
 
 import Toolbox from '../toolbox';
-import ProductsList from '../productsList/ProductsList';
+import ProductsList from "../../views/productsList";
 
 import ProductSidebar from '../productSidebar';
 
