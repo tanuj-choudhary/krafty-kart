@@ -1,4 +1,4 @@
-// Third PArty imports
+// Third Party imports
 import React from 'react';
 import { Container, Row, Col, Spinner } from 'react-bootstrap';
 
@@ -10,6 +10,7 @@ import './newArrivalsView.scss';
 
 function NewArrivalsView({ products }) {
   const renderProducts = () => {
+    // Render laoder
     if (products.length === 0) {
       return (
         <div className="custom__center">
@@ -20,12 +21,14 @@ function NewArrivalsView({ products }) {
       );
     }
 
+    // Render error
     if (products[0] === 'failed') {
       return (
         <div className="error custom__center">Error loading products...</div>
       );
     }
 
+    // Render products
     return products.map((product) => (
       <Col key={product._id} sm={6} lg={4}>
         <ProductCard

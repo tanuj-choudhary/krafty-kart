@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Project imports
-import Hero from '../../components/hero/Hero';
+import Hero from '../hero';
 import NewArrivals from '../../components/newArrivals';
 import ProductGallery from '../../components/productGallery/ProductGallery';
 import MostRatedItems from '../../components/mostRatedItems';

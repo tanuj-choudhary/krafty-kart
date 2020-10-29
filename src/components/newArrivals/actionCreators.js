@@ -10,7 +10,7 @@ export const getNewProducts = () => async (dispatch) => {
     if (err.response) {
       dispatch({
         type: 'GET_NEW_PRODUCTS_FAILED',
-        payload: err.response.message,
+        payload: err.response.data.message,
       });
     }
 
