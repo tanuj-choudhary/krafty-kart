@@ -4,7 +4,7 @@ import { Switch, Route, Redirect,HashRouter } from 'react-router-dom';
 
 // Project imports
 import Header from '../views/header';
-import Home from '../components/home/Home';
+import Home from '../views/home/Home';
 import Account from "../components/account";
 import Footer from '../components/footer/Footer';
 import Products from "../components/products";
