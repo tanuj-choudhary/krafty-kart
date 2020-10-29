@@ -1,4 +1,4 @@
-import { validateFirstName,validateLastName } from '../../utils/validation';
+import { validateFirstName,validateLastName,validateMobileNumber } from '../../utils/validation';
 
 // Validate Function for redux form
 export const validate = (values) => {
@@ -13,6 +13,11 @@ export const validate = (values) => {
   error = validateLastName(values.lastName);
   if (error) {
     errors.lastName = error;
+  }
+
+  error = validateMobileNumber(values.mobileNumber);
+  if (error) {
+    errors.mobileNumber = error;
   }
 
   return errors;
