@@ -2,8 +2,8 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
 
-import EditMeForm from '../editmeForm';
-import './profileView.scss';
+import EditMeForm from '../../components/editmeForm';
+import './profile.scss';
 
  function ProfileView() {
     return (
