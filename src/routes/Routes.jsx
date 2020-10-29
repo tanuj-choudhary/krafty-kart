@@ -3,7 +3,7 @@ import React from 'react';
 import { Switch, Route, Redirect,HashRouter } from 'react-router-dom';
 
 // Project imports
-import Header from '../components/header/Header';
+import Header from '../views/header';
 import Home from '../components/home/Home';
 import Account from "../components/account";
 import Footer from '../components/footer/Footer';
