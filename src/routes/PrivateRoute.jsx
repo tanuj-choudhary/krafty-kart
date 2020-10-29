@@ -2,6 +2,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 
 import React, { useEffect } from 'react';
+import { Spinner } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { Redirect, Route } from 'react-router-dom';
 
@@ -18,7 +19,12 @@ function PrivateRoute({ component:Component,isSignedInData,isSignedIn, ...rest }
         <Route {...rest} render={(props) => {
             
             if (!isSignedInData) {
-                return <div>Loading</div>;
+                return <div className="custom__center">
+                <Spinner variant="primary" animation="border" role="status">
+                  <span className="sr-only">Loading...</span>
+                </Spinner>
+                </div>;
+                
             }
             if (isSignedInData.isSignedIn) {
                 return <Component user={isSignedInData.user}  {...props} />;
