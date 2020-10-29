@@ -1,12 +1,14 @@
+// Third party imports
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
+// Project imports
 import NewArrivalsView from './NewArrivalsView';
 import { getNewProducts } from './actionCreators';
 
-function NewArrivalsContainer({ getNewProducts, newProducts }) {
+function NewArrivalsContainer({ getProducts, newProducts }) {
   useEffect(() => {
-    getNewProducts();
+    getProducts();
   }, []);
 
   return <NewArrivalsView products={newProducts} />;
@@ -16,7 +18,7 @@ const mapStateToProps = (state) => {
   return { newProducts: Object.values(state.newProducts) };
 };
 
-const mapDispatchToProps = { getNewProducts };
+const mapDispatchToProps = { getProducts:getNewProducts };
 
 export default connect(
   mapStateToProps,
