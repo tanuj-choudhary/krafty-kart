@@ -1,4 +1,5 @@
 import { validateFirstName,validateLastName,validateMobileNumber } from '../../utils/validation';
+import { successToast, errorToast } from '../../utils/toast';
 
 // Validate Function for redux form
 export const validate = (values) => {
@@ -21,4 +22,12 @@ export const validate = (values) => {
   }
 
   return errors;
+};
+
+export const renderToast = (status, err) => {
+  if (status === 'success') {
+    successToast('User succesfully updated');
+  } else if (status === 'failed') {
+    errorToast(err.message);
+  }
 };
