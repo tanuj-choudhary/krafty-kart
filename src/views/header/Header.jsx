@@ -4,12 +4,12 @@ import { Navbar, Nav, Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 // Project imports
-import ToggleIcon from '../toggleIcon';
+import ToggleIcon from '../../components/toggleIcon';
 
 // Style Sheet
 import './header.scss';
 
-export default function Header() {
+ function Header() {
   return (
     <Container className="header-container" fluid>
       <Row>
@@ -57,13 +57,7 @@ export default function Header() {
                 >
                   Orders
                 </Nav.Link>
-                <Nav.Link
-                  as={Link}
-                  to="/wishlist"
-                  className="my-2  py-7  m-lg-0 py-lg-41 px-lg-21"
-                >
-                  WishList
-                </Nav.Link>
+                
                 <Nav.Link
                   as={Link}
                   to="/cart"
@@ -86,3 +80,5 @@ export default function Header() {
     </Container>
   );
 }
+
+export default Header;
